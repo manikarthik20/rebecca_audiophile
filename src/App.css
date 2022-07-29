@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App:before,
+.App:after {
+  content: '';
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  border-style: solid;
+}
+.App:before {
+  margin-left: 300px;
+  border-width: 50px 0 0 50px;
+  border-color: skyblue;
+  top: -4px;
+  left: -4px;
+}
+.App:after {
+  margin-top: 50px;
+  margin-right: 300px;
+  border-width: 0 50px 50px 0;
+  border-color: skyblue;
+  bottom: -4px;
+  right: -4px;
+}
